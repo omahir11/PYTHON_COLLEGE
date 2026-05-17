@@ -25,8 +25,7 @@ for row in subtraction:
 
 
 
-    matrix = [[1, 2, 3],
-          [4, 5, 6]]
+matrix = [[1, 2, 3],[4, 5, 6]]
 
 transpose = []
 
@@ -39,7 +38,6 @@ for i in range(len(matrix[0])):
     transpose.append(row)
 
 print("Transpose Matrix:")
-
 for row in transpose:
     print(row)
 
