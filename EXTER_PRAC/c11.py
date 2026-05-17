@@ -14,6 +14,9 @@ print("Random Choice:", random.choice(colors))
 #  ID, Name, and Age. Insert 5 records into the file. 
 #  Read and display the contents of the CSV file. Search and display a specific record by ID.
 
+
+
+
 import csv
 # Writing to CSV file
 with open("data.csv", "w", newline="") as file:

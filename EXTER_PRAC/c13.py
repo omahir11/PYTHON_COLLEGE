@@ -34,5 +34,6 @@ try:
     with open("destination.txt", "w") as destination:
         destination.write(content)
     print("File Copied Successfully")
+    
 except FileNotFoundError:
     print("source.txt file does not exist")

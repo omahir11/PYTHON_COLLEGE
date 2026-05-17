@@ -28,12 +28,13 @@ try:
                 frequency[word] += 1
             else:
                 frequency[word] = 1
+
+
         # Sort by frequency
-        sorted_words = sorted(frequency.items(),
-                              key=lambda x: x[1],
-                              reverse=True)
+        sorted_words = sorted(frequency.items(),key=lambda x: x[1],reverse=True)
         print("Word Frequencies:\n")
         for word, count in sorted_words:
             print(word, ":", count)
+            
 except FileNotFoundError:
     print("story.txt file not found")
