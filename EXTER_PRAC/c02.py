@@ -3,17 +3,13 @@
 try:
     num1 = int(input("Enter first number: "))
     num2 = int(input("Enter second number: "))
-
     result = num1 / num2
-
     print("Result =", result)
 
 except ValueError:
     print("Invalid input! Please enter numbers only.")
-
 except ZeroDivisionError:
     print("Cannot divide by zero.")
-
 except FileNotFoundError:
     print("File not found.")
 
@@ -38,7 +34,6 @@ class Employee:
         self.emp_id = emp_id
         self.name = name
         self.salary = salary
-
         print("Employee Object Created")
 
     def display(self):
@@ -51,7 +46,5 @@ class Employee:
 
 
 e1 = Employee(101, "Om", 50000)
-
 e1.display()
-
 del e1

@@ -2,12 +2,9 @@
 # Modify the program to ignore case sensitivity. 
 
 string = input("Enter a string: ")
-
 new_string = string.lower()
-
 if new_string == new_string[::-1]:
     print("Palindrome")
-
 else:
     print("Not Palindrome")
 

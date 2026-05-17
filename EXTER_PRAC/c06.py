@@ -12,7 +12,6 @@ student = {
     "roll_number": 101,
     "marks": 85
 }
-
 print("Original Dictionary:")
 print(student)
 
@@ -22,7 +21,6 @@ student["grade"] = "A"
 student["marks"] = 90
 # Delete key-value pair
 del student["grade"]
-
 print("\nUpdated Dictionary:")
 print(student)
 
@@ -43,20 +41,14 @@ for key, value in student.items():
 
 
 # c. Implement a program to count the frequency of words in a given string using a dictionary.
-
 text = input("Enter a string: ")
-
 words = text.split()
-
 frequency = {}
-
 for word in words:
     if word in frequency:
         frequency[word] += 1
     else:
         frequency[word] = 1
-
 print("\nWord Frequency:")
-
 for word, count in frequency.items():
     print(word, ":", count)

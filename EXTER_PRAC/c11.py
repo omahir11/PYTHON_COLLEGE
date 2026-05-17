@@ -24,36 +24,25 @@ with open("data.csv", "w", newline="") as file:
     writer.writerow([3, "Amit", 22])
     writer.writerow([4, "Sneha", 19])
     writer.writerow([5, "Priya", 23])
-
 print("CSV File Created")
 
 # Reading CSV file
 print("\nCSV File Contents:")
-
 with open("data.csv", "r") as file:
-
     reader = csv.reader(file)
-
     for row in reader:
         print(row)
 
 # Search record by ID
 search_id = input("\nEnter ID to search: ")
-
 with open("data.csv", "r") as file:
-
     reader = csv.reader(file)
-
     next(reader)
-
     found = False
-
     for row in reader:
-
         if row[0] == search_id:
             print("Record Found:", row)
             found = True
             break
-
     if not found:
         print("Record Not Found")

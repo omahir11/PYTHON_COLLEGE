@@ -2,19 +2,14 @@
 # Compute the difference between two dates. 
 
 from datetime import datetime
-
 # Current date and time
 now = datetime.now()
-
 print("Current Date and Time:")
 print(now)
-
 # Difference between two dates
 date1 = datetime(2025, 1, 1)
 date2 = datetime(2025, 5, 1)
-
 difference = date2 - date1
-
 print("\nDifference Between Dates:")
 print(difference.days, "days")
 
